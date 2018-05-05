@@ -14,6 +14,26 @@ margin-bottom:0;
 {
 height: 45px; 
 }
+
+.navbar-default .nav-list
+{
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.buy_btn{
+  text-transform: uppercase;
+  border: none;
+  background-color: #7ad8da;
+  border-radius: 10px;
+}
+
+.navbar-default .navbar-nav > #buynow_btn
+{
+  left: 5%;
+  line-height: 3.5em;
+}
+
 .navbar-brand
 {
 padding: 5px 0;
