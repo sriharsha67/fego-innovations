@@ -15,6 +15,17 @@ transition:1s all linear;
 -o-transition:1s all linear;
 }
 
+.navbar-right .dropdown-menu 
+{
+    right: 0;
+    left: 10%;
+}
+
+.dropdown-menu
+{
+min-width:100%;    
+}
+
 .affix
 {    
 transition:1s all linear;
@@ -58,7 +69,11 @@ margin: 5px 0;
 background:transparent;    
 }
 
-.navbar-default .navbar-nav > li > a:hover:after
+.copy p
+{
+line-height:40px;
+}
+/*.navbar-default .navbar-nav > li > a:hover:after
 {
 position:absolute;
 bottom:0;
@@ -74,7 +89,7 @@ transition:1s linear all;
 -moz-transition:.5s linear all;
 -ms-transition:.5s linear all;
 -o-transition:.5s linear all;
-}
+}*/
 
 .navbar-default .navbar-nav > li > a:after
 {
@@ -292,7 +307,7 @@ transition:.5s linear all;
 {
 position:absolute;
 width:100%;
-bottom:15px;
+bottom:18px;
 text-align:center;
 left:0;
 right:0;
@@ -842,15 +857,16 @@ color:white;
     
 .fego-social-icons > li
 {
-display:inline-block;
-padding:8px;
-width:50px;
-height:50px;
-border-radius:50px;
-border:1px solid #fbfbfb;
-margin:0 .5em;
-text-align:center;
-font-size:1.5em;
+display: inline-block;
+/* padding: 8px; */
+width: 40px;
+height: 40px;
+line-height: 40px;
+border-radius: 50px;
+border: 1px solid #fbfbfb;
+margin: 0 .5em;
+text-align: center;
+font-size: 1.5em;
 }
     
 .fego-social-icons

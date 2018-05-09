@@ -3,6 +3,12 @@
 <link type="text/css" rel="stylesheet" href="./css/bootstrap.css" />
 <link type="text/css" rel="stylesheet" href="./css/style.css" />
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+<style>
+.fab
+{
+line-height: 2;    
+}
+</style>
 </head>
 <body>
     
@@ -24,7 +30,13 @@
       <ul class="nav navbar-nav navbar-right nav-list">
           <li><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
           <li><a href="about.html">About Us</a></li>
-          <li><a href="products.html">Products</a></li>
+          <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="for-cars.html">Cars</a></li>
+                <li><a href="for-bikes.html">Bikes</a></li>
+              </ul>
+            </li>
           <li class="active"><a href="contact.html">Contact Us</a></li>
           <li id="buynow_btn"><button type="button" class="btn btn-default buy_btn"><b>Buy Now</b></button></li>
       </ul>
@@ -40,11 +52,11 @@ BECOME A PARTNER
 </p>
 <div class="col-md-10 no-padding">
 <div class="form-group">
-<input type="text" class="form-control pull-left" name="subscriber" placeholder="example@gmail.com" />
+<input type="text" id="becomePartner" class="form-control pull-left" name="subscriber" placeholder="example@gmail.com" />
 </div>    
 </div>
 <div class="col-md-2 no-padding">
-<button class="form-control btn btn-default subscribe_btn pull-left">SUBMIT</button>
+<button class="form-control btn btn-default subscribe_btn pull-left" onclick="subscribe()">SUBMIT</button>
 </div>
 <div class="clearfix"></div>
 
@@ -98,14 +110,16 @@ SUBMIT
         <li><i class="fab fa-youtube"></i></li>
     </ul>
         </div>
-        <div class="col-md-4">
-            Copyright &copy; 2018 Fego Innovations. All rights reserved.
+        <div class="col-md-4 copy">
+            <p>Copyright &copy; 2018 Fego Innovations. All rights reserved.</p>
         </div>
     </div>
     </div>
     
-</footer> 
+</footer>
+    
 </body>
 <script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./js/main.js"></script>
 </html>

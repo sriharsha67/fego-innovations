@@ -28,7 +28,13 @@
       <ul class="nav navbar-nav navbar-right nav-list">
           <li><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
           <li class="active"><a href="about.html">About Us</a></li>
-          <li ><a href="products.html">Products</a></li>
+          <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="for-cars.html">Cars</a></li>
+                <li><a href="for-bikes.html">Bikes</a></li>
+              </ul>
+            </li>
           <li><a href="contact.html">Contact Us</a></li>
           <li id="buynow_btn"><button type="button" class="btn btn-default buy_btn"><b>Buy Now</b></button></li>
       </ul>
@@ -195,11 +201,11 @@ BECOME A PARTNER
 </p>
 <div class="col-md-9 no-padding">
 <div class="form-group">
-<input type="text" class="form-control pull-left" name="subscriber" placeholder="example@gmail.com" />
+<input id="becomePartner" type="text" class="form-control pull-left" name="subscriber" placeholder="example@gmail.com" />
 </div>    
 </div>
 <div class="col-md-3 no-padding">
-<button class="form-control btn btn-default subscribe_btn pull-left">SUBMIT</button>
+<button class="form-control btn btn-default subscribe_btn pull-left" onclick="subscribe()">SUBMIT</button>
 </div>    
      </div>   
     </div>    
@@ -221,8 +227,8 @@ BECOME A PARTNER
         <li><i class="fab fa-youtube"></i></li>
     </ul>
         </div>
-        <div class="col-md-4">
-            Copyright &copy; 2018 Fego Innovations. All rights reserved.
+        <div class="col-md-4 copy">
+            <p>Copyright &copy; 2018 Fego Innovations. All rights reserved.</p>
         </div>
     </div>
     </div>
@@ -237,5 +243,6 @@ $(document).ready(function()
 	new ScrollFlow(); 
 });
 </script>
+<script type="text/javascript" src="./js/main.js"></script>
 </body>
 </html>
