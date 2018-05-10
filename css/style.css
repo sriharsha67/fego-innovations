@@ -43,6 +43,9 @@ height: 45px;
 {
   letter-spacing: 1px;
   text-transform: uppercase;
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 1.1em;
+  font-weight: 400;
 }
 
 .buy_btn{
@@ -50,6 +53,9 @@ height: 45px;
   border: none;
   background-color: #7ad8da;
   border-radius: 10px;
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 1.1em;
+  font-weight: 700;
 }
 
 .navbar-default .navbar-nav > #buynow_btn
@@ -73,6 +79,9 @@ background:transparent;
 .copy p
 {
 line-height:40px;
+font-family: 'Maven Pro', sans-serif;
+font-size: 1em;
+font-weight: 400;
 }
 /*.navbar-default .navbar-nav > li > a:hover:after
 {
@@ -129,15 +138,6 @@ transition:.5s linear all;
 -o-transition:.5s linear all;
 }
 
-@font-face {
-font-family: Avenir Light;
-src: url(fonts/Avenir/Avenir LT35 Light.ttf);
-}
-@font-face 
-{
-font-family: Avenir LT;
-src: url(fonts/Avenir/Avenir LT 35 Light Oblique.ttf);
-}
 #banner-wrapper
 {
     position: relative;
@@ -181,14 +181,18 @@ padding:0 !important;
 {
 font-size:2.5em; 
 line-height:1em;
-font-family: Avenir LT;
-font-weight:350;
+font-family: 'Maven Pro', sans-serif;
+font-size: 3em;
+font-weight:400;
+margin-top: 0;
+margin-bottom: 10px;
 }
 .banner-text p
 {
+font-family: 'Maven Pro', sans-serif;  
 line-height:2em;
 font-size:1.4em;
-font-weight:600;
+font-weight:500;
 color:#7ad8da;
 }
 .banner-pointer
@@ -206,7 +210,11 @@ font-size:1.5em;
 }
 .scrollText
 {
-margin-top:10%;        
+margin-top:10%;
+text-transform: uppercase;
+font-family: 'Maven Pro', sans-serif;
+font-size: 1em;
+font-weight: 400;   
 }
 .banner-pointer span
 {
@@ -303,6 +311,19 @@ transition:.5s linear all;
     left: 0;
     right: 0;
     margin: 0 auto;
+    
+}
+.fg_block .head h3{
+
+font-family: 'Maven Pro', sans-serif;
+font-size: 2.5em;
+font-weight: 400;
+}
+.fg_block .head h4{
+
+font-family: 'Maven Pro', sans-serif;
+font-size: 1.5em;
+font-weight: 400;
 }
 .fg_block .foot
 {
@@ -313,15 +334,33 @@ text-align:center;
 left:0;
 right:0;
 margin:0 auto;
+font-family: 'Maven Pro', sans-serif;
+font-size: 1em;
+font-weight: 400;
+}
+.fg_block .foot .foot-text{
+font-family: 'Maven Pro', sans-serif;
+font-size: 1em;
+font-weight: 700;
+text-transform: uppercase;
 }
 .works-text
 {
 padding:5em 0;
-font-size:17px;
+}
+.works-text h3{
+font-family: 'Maven Pro', sans-serif;
+font-size: 2em;
+font-weight: 500;
+text-transform: uppercase;
+
 }
 .works-text p
 {
-padding:0 10em;    
+padding:0 10em; 
+font-family: 'Maven Pro', sans-serif;
+font-size: 1.2em;
+font-weight: 400;   
 }
 .fg_mid_block
 {
@@ -379,8 +418,10 @@ margin:0 21em;
 }
 .fg_piece_text h5
 {
-font-size:3.5em;
 color:#7ad8da;
+font-family: 'Maven Pro', sans-serif;
+font-size: 4em;
+font-weight: 400; 
 }
 .fg_piece_text
 {
@@ -390,14 +431,12 @@ width:100%;
 height: auto;
 color:white;
 }
-.fg_piece_text h6
-{
-cursor: pointer;
-}
 .fg_piece_text p
-{
-font-size:1.2em; 
+{ 
 color:#7ad8da;
+font-family: 'Maven Pro', sans-serif;
+font-size: 1.5em;
+font-weight: 400; 
 }
 .spl_icon
 {
@@ -408,6 +447,12 @@ height:50px;
 {
 background:url(img/air-icon.png);
 background-size:cover;
+}
+
+.award-name{
+font-family: 'Maven Pro', sans-serif;
+font-size: 1.2em;
+font-weight: 500;
 }
 
 
@@ -438,9 +483,11 @@ border:1px solid #000;
 .med_content p
 {
 width:55%;
-font-size:1.3em;  
-font-weight:300;
 padding:1em;
+font-family: 'Maven Pro', sans-serif;
+font-size: 1.3em;
+font-weight: 500;
+text-align: left;
 
 }
 .med_content p:nth-child(2)
@@ -449,7 +496,9 @@ width:50%;
 border-top:1px solid #000;
 margin-left:10px;
 padding:5px;
-font-size:1em;
+font-family: 'Maven Pro', sans-serif;
+font-size: 1em;
+font-weight: 400;
 }
 
 
@@ -479,6 +528,9 @@ background:#414242 !important;
 margin:0;
 border:1px solid #d1d1d1;
 border-radius:0;
+font-family: 'Maven Pro', sans-serif;
+font-size: 1.2em;
+font-weight: 400;
 }
 .form-inline
 {
@@ -495,12 +547,18 @@ color:white;
 height:30px;
 line-height:30px;
 padding-left:10px;
+font-family: 'Maven Pro', sans-serif;
+font-size: 1.1em;
+font-weight: 400;
 }
 .chat_content
 {
 height:175px;
 width:100%;
 background:#d1d1d1;
+font-family: 'Maven Pro', sans-serif;
+font-size: 1.1em;
+font-weight: 400;
 }
 .apply-padding-tb
 {
@@ -513,13 +571,22 @@ padding:0 30px;
 .chat_btn
 {
 background: #414242 !important;
-font-size: 1em;
 color: white;
+font-family: 'Maven Pro', sans-serif;
+font-size: 1.2em;
+font-weight: 400;
+border: none;
+border-radius: 0;
+width: 35%;
+padding: 3%;
+outline: none;
 }
 .cnt_title
 {
 color:black;
-font-weight:600;
+font-family: 'Maven Pro', sans-serif;
+font-size: 1.2em;
+font-weight: 500;
 }   
 
 .cnt_field
@@ -537,12 +604,39 @@ background:transparent;
 {
 background-color:#414242;
 color:white;
-font-weight:600;
+font-family: 'Maven Pro', sans-serif;
+font-size: 1.2em;
+font-weight: 400;
+text-transform: uppercase;
+border: none;
+border-radius: 0;
 }
 
+.contact_form .form-group #becomePartner
+{
+  border-radius: 0;
+}
 
-
-
+input::-webkit-input-placeholder {
+font-family: 'Maven Pro', sans-serif;
+font-size: 1em;
+font-weight: 400;
+}
+input::-moz-placeholder {
+font-family: 'Maven Pro', sans-serif;
+font-size: 1em;
+font-weight: 400;
+}
+input:-ms-input-placeholder {
+font-family: 'Maven Pro', sans-serif;
+font-size: 1em;
+font-weight: 400;
+}
+input::placeholder {
+font-family: 'Maven Pro', sans-serif;
+font-size: 1em;
+font-weight: 400;
+}
 
 
 
@@ -621,6 +715,14 @@ font-weight:600;
 {
 padding:5em 0em;    
 }
+
+.gallery_holder h4
+{
+font-size: 2em;
+font-family: 'Maven Pro', sans-serif;
+font-weight: 500;
+text-transform: uppercase;
+}
        
 
 .thumbs
@@ -682,6 +784,12 @@ position:relative;
     margin:0 5px;
     float:left;
     }
+    .testimonials_holder .testimonial h5
+    {
+    font-size: 1.1em;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 400;
+    }
     .testimonial
     {
     text-align:center;    
@@ -701,6 +809,9 @@ position:relative;
     {
     padding:2em 0;
     color:#a6a6a6;
+    font-size: 1em;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 400;
     }
     
     .prev-1,.next-1
@@ -723,7 +834,10 @@ background:#fbfbfb;
 .product-content
 {
 padding:90px 0;
-text-align:center;
+text-align:left;
+font-size: 1.1em;
+font-family: 'Maven Pro', sans-serif;
+font-weight: 400;
 }
 .product-wrap
 {
@@ -756,7 +870,15 @@ padding:4em 0em;
 
 .cnt_head{
     text-transform: uppercase;
+    font-size: 1.2em;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 500;
+}
+
+.cnt_info{
     font-size: 1em;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 400;
 }
 
 .base_ln{
@@ -795,6 +917,16 @@ bottom:-10%;
 left:0;
 width:100%;
 }
+.pillar-details .details_wrap .name h5{
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 1.3em;
+  font-weight: 400;
+}
+.pillar-details .details_wrap .desi{
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+}
 .details_wrap
 {
 width:85%;   
@@ -809,8 +941,10 @@ color:white;
 position:absolute;
 width:100%;
 color:#a6a6a6;
-font-size:11px;
 margin-top:10%;
+font-family: 'Maven Pro', sans-serif;
+font-size: 1em;
+font-weight: 400;
 }
 .pillar-row1
 {
@@ -836,7 +970,20 @@ padding:5em 0;
 }
 .fego-story
 {
-margin-top:50px;    
+margin-top:50px;
+
+}
+.fego-story h5
+{
+font-family: 'Maven Pro', sans-serif;
+font-size: 1.3em;
+font-weight: 500;
+}
+.fego-story p
+{
+font-family: 'Maven Pro', sans-serif;
+font-size: 1.1em;
+font-weight: 400;
 }
 .fego-story-img
 {
@@ -876,7 +1023,11 @@ margin: 0 .5em;
 text-align: center;
 font-size: 1.5em;
 }
-    
+
+.fego-social-icons li a
+{
+  color: #ffffff;
+}
 .fego-social-icons
 {
 list-style:none;
