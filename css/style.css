@@ -834,6 +834,11 @@ background:#fbfbfb;
 .product-content
 {
 padding:90px 0;
+text-align:center;
+}
+.product-content p
+{
+/* padding:90px 0; */
 text-align:left;
 font-size: 1.1em;
 font-family: 'Maven Pro', sans-serif;
