@@ -597,7 +597,7 @@ padding:4px 0;
 .cnt_field input
 {
 border-radius:0px;
-border:1.5px solid #d1d1d1;
+border:1px solid #d1d1d1;
 background:transparent;
 }
 .sbt_btn
@@ -873,6 +873,14 @@ padding:4em 0em;
     padding-bottom: 10%;
 }
 
+.contact #becomePartner
+{
+  border-radius: 0;
+}
+.contact .subscribe_btn
+{
+  padding: 0;
+}
 .cnt_head{
     text-transform: uppercase;
     font-size: 1.2em;
