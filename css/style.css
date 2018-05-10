@@ -268,6 +268,10 @@ background-size:cover;
 }
 */
 
+#float-block
+{
+  margin-left: 13%;
+}
 .fg_block
 {
 position:relative;
@@ -499,6 +503,8 @@ padding:5px;
 font-family: 'Maven Pro', sans-serif;
 font-size: 1em;
 font-weight: 400;
+bottom: 5%;
+position: absolute;
 }
 
 
