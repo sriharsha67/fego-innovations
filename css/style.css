@@ -606,6 +606,10 @@ border-radius:0px;
 border:1px solid #d1d1d1;
 background:transparent;
 }
+.cnt_field textarea
+{
+  max-width: 100%;
+}
 .sbt_btn
 {
 background-color:#414242;
