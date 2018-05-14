@@ -67,7 +67,7 @@ height: 45px;
   font-family: 'Maven Pro', sans-serif;
   font-size: 1.1em;
   font-weight: 700;
-  color: black;
+  color: #000000;
 }
 
 
@@ -1094,7 +1094,7 @@ list-style:none;
 
 .buy_btn:hover
 {
-background:#7ad8da !important;
+background:#27f788 !important;
 color:black !important;
 }
 
