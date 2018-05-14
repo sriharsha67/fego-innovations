@@ -868,6 +868,10 @@ position:relative;
 {
 background:#fbfbfb;
 }
+
+#prod_cont{
+  padding-top: 6em;
+}
 .product-content
 {
 padding:90px 0;
@@ -897,6 +901,8 @@ width:300px;
 height:300px;
 
 }
+
+
 .product-desc
 {
 margin-top:10%;    
