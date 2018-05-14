@@ -908,7 +908,7 @@ padding:4em 0em;
 /* Contact Page */
 
 .contact{
-    padding-top: 15%;
+    padding-top: 10%;
     padding-bottom: 10%;
 }
 
@@ -1086,9 +1086,26 @@ list-style:none;
 }
 /*Footer*/
 
+.foot-text:hover
+{
+    background:#fff !important; 
+    color:black !important;
+}
 
+.buy_btn:hover
+{
+background:#7ad8da !important;
+color:black !important;
+}
 
 .btn:hover, .btn:focus, .btn.focus
 {
     color:#fff;
+}
+
+.subscribe_btn:hover,
+.chat_btn:hover, 
+.sbt_btn:hover, 
+{
+    color:#fff !important;
 }
