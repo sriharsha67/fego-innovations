@@ -9,7 +9,8 @@ $('ul.nav li.dropdown').hover(function() {
 function subscribe()
 {
 var val=document.getElementById('becomePartner').value;
-/*$.post('../subscribe.php',{email:val},function(d){
+/*
+$.post('../subscribe.php',{email:val},function(d){
 if(d==200)
 {
 alert('Thank you! We will get back to you soon.');    
@@ -18,7 +19,8 @@ else
 {
 alert('Please try again later.');        
 }
-});*/
+});
+*/
 alert(val);
 }
 /*General*/

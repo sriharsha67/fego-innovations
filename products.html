@@ -410,12 +410,11 @@ function showSlides(n) {
 $('.next-1').click(function()
 {
 var right=$('.testimonials_holder ul').css('right').replace(/[^-\d\.]/g, '');
-//console.log('before -- '+ right);
-right = 900;
-//console.log('after -- '+ right);
+//console.log('before -- ' + right);
+right = right + 330;
+//console.log('after -- ' + right);
 $('.testimonials_holder ul').animate({right:right});      
 });
-    
 
 </script>
 </body>

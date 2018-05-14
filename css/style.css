@@ -527,9 +527,8 @@ background:transparent;
 }
 .sbt_btn
 {
-background-color:#414242;
+background:#414242 !important;
 color:white;
-font-weight:600;
 }
 
 
@@ -874,3 +873,10 @@ font-size: 1.5em;
 list-style:none;
 }
 /*Footer*/
+
+
+
+.btn:hover, .btn:focus, .btn.focus
+{
+    color:#fff;
+}
