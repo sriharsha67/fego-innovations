@@ -701,8 +701,6 @@ font-weight: 400;
   cursor: pointer;
 }
 
-
-
 /* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
@@ -874,6 +872,12 @@ background:#fbfbfb;
 {
 padding:90px 0;
 text-align:center;
+padding-top: 3em;
+}
+
+.product-content .prod-head
+{
+  font-size: 2em;
 }
 .product-content p
 {
@@ -1108,4 +1112,22 @@ color:black !important;
 .sbt_btn:hover, 
 {
     color:#fff !important;
+}
+
+.prodbuy_btn{
+  margin-top: 3em;
+  text-transform: uppercase;
+  border: none;
+  background-color: #27f788;
+  border-radius:0px;
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 1.1em;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.prodbuy_btn:hover
+{
+background:#27f788 !important;
+color:black !important;
 }
