@@ -51,12 +51,25 @@ height: 45px;
 .buy_btn{
   text-transform: uppercase;
   border: none;
-  background-color: #7ad8da;
+  background-color: #27f788;
   border-radius: 10px;
   font-family: 'Maven Pro', sans-serif;
   font-size: 1.1em;
   font-weight: 700;
+  color: #ffffff;
 }
+
+.buy_btn:hover{
+  text-transform: uppercase;
+  border: none;
+  background-color: #27f788;
+  border-radius: 10px;
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 1.1em;
+  font-weight: 700;
+  color: black;
+}
+
 
 .navbar-default .navbar-nav > #buynow_btn
 {
@@ -91,7 +104,7 @@ left:0;
 right:0;
 width:80%;
 margin:0 auto;
-background:#7ad8da;
+background:#27f788;
 height:4px;
 content:'';    
 transition:1s linear all;
@@ -109,7 +122,7 @@ left:0;
 right:0;
 width:0%;
 margin:0 auto;
-background:#7ad8da;
+background:#27f788;
 height:4px;
 content:'';    
 transition:.5s linear all;
@@ -128,7 +141,7 @@ left:0;
 right:0;
 width:80%;
 margin:0 auto;
-background:#7ad8da;
+background:#27f788;
 height:4px;
 content:'';
 transition:.5s linear all;
@@ -193,7 +206,7 @@ font-family: 'Maven Pro', sans-serif;
 line-height:2em;
 font-size:1.4em;
 font-weight:500;
-color:#7ad8da;
+color:#27f788;
 }
 .banner-pointer
 {
@@ -315,6 +328,7 @@ transition:.5s linear all;
     left: 0;
     right: 0;
     margin: 0 auto;
+    margin-top: 1em;
     
 }
 .fg_block .head h3{
@@ -341,12 +355,26 @@ margin:0 auto;
 font-family: 'Maven Pro', sans-serif;
 font-size: 1em;
 font-weight: 400;
+margin-bottom: 1em;
 }
 .fg_block .foot .foot-text{
 font-family: 'Maven Pro', sans-serif;
 font-size: 1em;
 font-weight: 700;
 text-transform: uppercase;
+display: block;
+width: 30%;
+border: none;
+border-radius: 0;
+margin: 0 auto;
+margin-bottom: 0.8em;
+}
+.fg_block .foot .buy-text{
+font-family: 'Maven Pro', sans-serif;
+font-size: 1em;
+font-weight: 400;
+color: #27f788;
+text-decoration: none;
 }
 .works-text
 {
@@ -422,7 +450,7 @@ margin:0 21em;
 }
 .fg_piece_text h5
 {
-color:#7ad8da;
+color:#27f788;
 font-family: 'Maven Pro', sans-serif;
 font-size: 4em;
 font-weight: 400; 
@@ -437,7 +465,7 @@ color:white;
 }
 .fg_piece_text p
 { 
-color:#7ad8da;
+color:#27f788;
 font-family: 'Maven Pro', sans-serif;
 font-size: 1.5em;
 font-weight: 400; 
@@ -492,7 +520,6 @@ font-family: 'Maven Pro', sans-serif;
 font-size: 1.3em;
 font-weight: 500;
 text-align: left;
-
 }
 .med_content p:nth-child(2)
 {
@@ -505,6 +532,7 @@ font-size: 1em;
 font-weight: 400;
 bottom: 5%;
 position: absolute;
+color: #27f788;
 }
 
 
