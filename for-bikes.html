@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <link type="text/css" rel="stylesheet" href="./css/bootstrap.css" />
 <link type="text/css" rel="stylesheet" href="css/style.css"/>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
@@ -59,7 +60,20 @@
                 <p class="prod-head">FEGO Float for Bikes</p>
                 <p>Safe And Comfortable Ride. Ride 2x longer<br> without any fatigue. In Traffic or on a long drive.<br> Great Air Circulation, Feels like Riding on Air.</p>
                 <br>    
-                <p class=""><img src="img/product-2.png"/></p>
+                <p class=""><img src="img/product-2.png" data-toggle="modal" data-target="#myModal"/></p>
+                
+                  <!-- Modal -->
+                  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                      
+                        
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                          <video width="100%" controls>
+                            <source src="videos/bike.mp4" type="video/mp4">
+                          </video>
+                      
+                    </div>
+                  </div>
                 <a target ="_blank" class="btn btn-default prodbuy_btn pull-left" href="https://www.amazon.in/Fego-Float-back-Bikes-Suspension/dp/B079VVTPHJ/ref=sr_1_1?ie=UTF8&qid=1526279051&sr=8-1&keywords=fego+float" role="button">Buy Now</a>
                 </div>
             </div>
@@ -330,7 +344,6 @@ SUBMIT
 </footer>    
     
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 <script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="./js/bootstrap.min.js"></script>
 <script type="text/javascript" src="./js/main.js"></script>

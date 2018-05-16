@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+
 <link type="text/css" rel="stylesheet" href="./css/bootstrap.css" />
 <link type="text/css" rel="stylesheet" href="css/style.css"/>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
@@ -49,7 +49,7 @@
         <div class="row">
             <div class="col-md-6 product-img">
                 <div class="product-content">
-                <img src="img/product-1.png"/>
+                  <img src="img/product-1.png"/>
                 </div>
             </div>
     
@@ -59,7 +59,27 @@
                 <div class="product-content">
                 <p>Safe And Comfortable Ride. Ride 2x longer<br> without any fatigue. In Traffic or on a long drive.<br> Great Air Circulation, Feels like Riding on Air.</p>
                 <br>    
-                <p class=""><img src="img/product-2.png"/></p>
+                <p class="">
+                  <img src="img/product-2.png" data-toggle="modal" data-target="#myModal"/>
+                </p>
+                  
+                  <style>
+                    #myModal{
+                      margin-top: 5em;
+                    }
+                  </style>
+                  <!-- Modal -->
+                  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                      
+                        
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                          <video width="600" controls>
+                            <source src="videos/bike.mp4" type="video/mp4">
+                          </video>
+                      
+                    </div>
+                  </div>
                 </div>
             </div>
             </div>
@@ -239,78 +259,6 @@
     <a class="prev-1"><img src="img/left-arrow.png"/></a>
     <a class="next-1"><img src="img/right-arrow.png"/></a>
         
-    <!--    <div class="testimonials_holder">
-            <ul class="col-md-offset-1" style="list-style:none;">
-                <li>
-                    <div class="testimonial">
-                        <img src="img/testimonial-dummy.jpg" alt="testimonial-img"/>
-                        <h5>VENKAT KRISHNA</h5>
-                        <div class="clearfix"></div>
-                        <br>
-                        <hr>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
-                    </div>
-                </li>
-                
-                <li>
-                    <div class="testimonial">
-                    <img src="img/testimonial-dummy.jpg" alt="testimonial-img"/>
-                    <h5>JOHN SMITH</h5>
-                    <div class="clearfix"></div>
-                        <br>
-                        <hr>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
-                    </div>
-                </li>
-                
-                <li>
-                    <div class="testimonial">
-                    <img src="img/testimonial-dummy.jpg" alt="testimonial-img"/>
-                    <h5>SURESH MITTAL</h5>
-                        <div class="clearfix"></div>
-                        <br>
-                        <hr>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
-                    </div>
-                </li>
-                
-                <li>
-                    <div class="testimonial">
-                    <img src="img/testimonial-dummy.jpg" alt="testimonial-img"/>
-                    <h5>SURESH MITTAL</h5>
-                        <div class="clearfix"></div>
-                        <br>
-                        <hr>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
-                    </div>
-                </li>
-                
-                
-                <li>
-                    <div class="testimonial">
-                    <img src="img/testimonial-dummy.jpg" alt="testimonial-img"/>
-                    <h5>SURESH MITTAL</h5>
-                        <div class="clearfix"></div>
-                        <br>
-                        <hr>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
-                    </div>
-                </li>
-                
-                
-                <li>
-                    <div class="testimonial">
-                    <img src="img/testimonial-dummy.jpg" alt="testimonial-img"/>
-                    <h5>SURESH MITTAL</h5>
-                        <div class="clearfix"></div>
-                        <br>
-                        <hr>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
-                    </div>
-                </li>
-                
-            </ul>
-        </div>-->
     
 <style>
 .test_holder
@@ -444,12 +392,22 @@ SUBMIT
     
 </footer>    
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="./js/bootstrap.min.js"></script>
 <script type="text/javascript" src="./js/main.js"></script>
 <script type="text/javascript">
+
+
+$('#link').click(function () {
+  var src = 'http://www.youtube.com/v/FSi2fJALDyQ&amp;autoplay=1';
+  $('#myModal').modal('show');
+  $('#myModal iframe').attr('src', src);
+});
+
+$('#myModal button').click(function () {
+  $('#myModal iframe').removeAttr('src');
+});
 
 var slideIndex = 1;
 showSlides(slideIndex);

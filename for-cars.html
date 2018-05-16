@@ -56,11 +56,24 @@
             <div class="col-md-6">
             <div class="product-desc">
                 <div class="product-content">
-                <p class="prod-head">FEGO Float for Bikes</p>
+                <p class="prod-head">FEGO Float for Cars</p>
                 <p>Safe And Comfortable Ride. Ride 2x longer<br> without any fatigue. In Traffic or on a long drive.<br> Great Air Circulation, Feels like Riding on Air.</p>
                 <br>    
-                <p class=""><img src="img/product-2.png"/></p>
-                <a target ="_blank" class="btn btn-default prodbuy_btn pull-left" href="https://www.amazon.in/Fego-Float-back-Bikes-Suspension/dp/B079VVTPHJ/ref=sr_1_1?ie=UTF8&qid=1526279051&sr=8-1&keywords=fego+float" role="button">Buy Now</a>
+                 <p class=""><img src="img/product-2.png" data-toggle="modal" data-target="#myModal"/></p>
+                
+                  <!-- Modal -->
+                  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                      
+                        
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                          <video width="100%" controls>
+                            <source src="videos/bike.mp4" type="video/mp4" class="prod-video">
+                          </video>
+                      
+                    </div>
+                  </div>
+                <a target ="_blank" class="btn btn-default prodbuy_btn pull-left" href="https://www.amazon.in/FEGO-Float-pregnancy-Suspension-Add/dp/B079Y91P84/ref=sr_1_2?ie=UTF8&qid=1526279051&sr=8-2&keywords=fego+float" role="button">Buy Now</a>
                 </div>
             </div>
             </div>
@@ -335,6 +348,11 @@ SUBMIT
 <script type="text/javascript" src="./js/bootstrap.min.js"></script>
 <script type="text/javascript" src="./js/main.js"></script>
 <script type="text/javascript">
+
+$('#myModal').on('hidden.bs.modal', function (e) {
+    $('#myModal video').attr("src", $("#myModal  video").attr("src"));
+});
+
 
 var slideIndex = 1;
 showSlides(slideIndex);

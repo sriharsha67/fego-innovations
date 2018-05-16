@@ -14,6 +14,7 @@ outline:0 !important;
 margin-bottom:0;
 z-index:9999999;
 width:100%;
+border-radius: 0;
 transition:1s all linear;
 -webkit-transition:1s all linear;
 -moz-transition:1s all linear;
@@ -1175,4 +1176,19 @@ display:inline-block;
 .testimonial
 {
 float:left;
+}
+
+#myModal{
+  margin-top: 5em;
+}
+
+.modal-dialog {
+  width: 800px;
+  margin: 30px auto;
+}
+
+.modal-dialog .close{
+  color: #fff;
+  font-size: 2em;
+  opacity: 1;
 }
