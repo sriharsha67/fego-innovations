@@ -31,8 +31,8 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="for-cars.html">Cars</a></li>
                 <li><a href="for-bikes.html">Bikes</a></li>
+                <li><a href="for-cars.html">Cars</a></li>
               </ul>
             </li>
           <li><a href="contact.html">Contact Us</a></li>
@@ -47,7 +47,7 @@
     
         <div class="row">
             <div class="col-md-6 product-img">
-                <div class="product-content">
+                <div class="product-content" id="prod_cont">
                 <img src="img/product-1.png"/>
                 </div>
             </div>
@@ -56,7 +56,7 @@
             <div class="col-md-6">
             <div class="product-desc">
                 <div class="product-content">
-                <p class="prod-head">FEGO Float for Cars</p>
+                <p class="prod-head">FEGO Float for Bikes</p>
                 <p>Safe And Comfortable Ride. Ride 2x longer<br> without any fatigue. In Traffic or on a long drive.<br> Great Air Circulation, Feels like Riding on Air.</p>
                 <br>    
                 <p class=""><img src="img/product-2.png"/></p>
@@ -229,10 +229,27 @@
     <a class="prev-1"><img src="img/left-arrow.png"/></a>
     <a class="next-1"><img src="img/right-arrow.png"/></a>
         
-        <div class="testimonials_holder">
-            <ul class="col-md-offset-1" style="list-style:none;">
-                <li>
-                    <div class="testimonial">
+        <div class="test_holder">
+        <ul class="test_slider">
+        <li>
+          <div class="testimonial">
+                        <img src="img/testimonial-dummy.jpg" alt="testimonial-img"/>
+                        <h5>VENKAT KRISHNA</h5>
+                        <div class="clearfix"></div>
+                        <br>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
+          </div>
+        </li>    
+        <li><div class="testimonial">
+                        <img src="img/testimonial-dummy.jpg" alt="testimonial-img"/>
+                        <h5>VENKAT KRISHNA</h5>
+                        <div class="clearfix"></div>
+                        <br>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
+                    </div></li>    
+        <li><div class="testimonial">
                         <img src="img/testimonial-dummy.jpg" alt="testimonial-img"/>
                         <h5>VENKAT KRISHNA</h5>
                         <div class="clearfix"></div>
@@ -240,66 +257,18 @@
                         <hr>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
                     </div>
-                </li>
-                
-                <li>
-                    <div class="testimonial">
-                    <img src="img/testimonial-dummy.jpg" alt="testimonial-img"/>
-                    <h5>JOHN SMITH</h5>
-                    <div class="clearfix"></div>
-                        <br>
-                        <hr>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
-                    </div>
-                </li>
-                
-                <li>
-                    <div class="testimonial">
-                    <img src="img/testimonial-dummy.jpg" alt="testimonial-img"/>
-                    <h5>SURESH MITTAL</h5>
+            </li>
+            
+            <li><div class="testimonial">
+                        <img src="img/testimonial-dummy.jpg" alt="testimonial-img"/>
+                        <h5>VENKAT KRISHNA</h5>
                         <div class="clearfix"></div>
                         <br>
                         <hr>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
                     </div>
-                </li>
-                
-                <li>
-                    <div class="testimonial">
-                    <img src="img/testimonial-dummy.jpg" alt="testimonial-img"/>
-                    <h5>SURESH MITTAL</h5>
-                        <div class="clearfix"></div>
-                        <br>
-                        <hr>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
-                    </div>
-                </li>
-                
-                
-                <li>
-                    <div class="testimonial">
-                    <img src="img/testimonial-dummy.jpg" alt="testimonial-img"/>
-                    <h5>SURESH MITTAL</h5>
-                        <div class="clearfix"></div>
-                        <br>
-                        <hr>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
-                    </div>
-                </li>
-                
-                
-                <li>
-                    <div class="testimonial">
-                    <img src="img/testimonial-dummy.jpg" alt="testimonial-img"/>
-                    <h5>SURESH MITTAL</h5>
-                        <div class="clearfix"></div>
-                        <br>
-                        <hr>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
-                    </div>
-                </li>
-                
-            </ul>
+            </li>
+        </ul>
         </div>
     
     </div>    
@@ -353,19 +322,21 @@ SUBMIT
     </ul>
         </div>
         <div class="col-md-4 copy">
-            <p>Copyright &copy; 2018 abdastudio. All rights reserved.</p>
+           <p>Copyright &copy; 2018 abdastudio. All rights reserved.</p> 
         </div>
     </div>
     </div>
     
 </footer>    
     
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 <script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="./js/bootstrap.min.js"></script>
 <script type="text/javascript" src="./js/main.js"></script>
 <script type="text/javascript">
 
-    var slideIndex = 1;
+var slideIndex = 1;
 showSlides(slideIndex);
 var slider=setInterval(function()
 {
@@ -409,16 +380,40 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   /*captionText.innerHTML = dots[slideIndex-1].alt;*/
 }
-    
+
+        
 $('.next-1').click(function()
 {
-var right=$('.testimonials_holder ul').css('right').replace(/[^-\d\.]/g, '');
-//console.log('before -- '+ right);
-right = 900;
-//console.log('after -- '+ right);
-$('.testimonials_holder ul').animate({right:right});      
+var right=$('.test_slider').css('right').replace(/[^-\d\.]/g, '');
+var length=$('.test_slider li').length;
+var width=$('.test_slider li').width() * length;
+if(right < 0 || right > length)
+{
+    right=0;
+}
+else
+{
+right = parseInt(right) + 340;    
+}
+$('.test_slider').animate({right:right});      
 });
     
+    
+$('.prev-1').click(function()
+{
+var right=$('.test_slider').css('right').replace(/[^-\d\.]/g, '');
+var length=$('.test_slider li').length;
+var width=$('.test_slider li').width() * length;
+if(right <=0)
+{
+    right=0;
+}
+else
+{
+right = parseInt(right) - 340;    
+}
+$('.test_slider').animate({right:right});      
+});
 
 </script>
 </body>

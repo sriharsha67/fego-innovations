@@ -873,6 +873,10 @@ position:relative;
 {
 background:#fbfbfb;
 }
+
+#prod_cont{
+  padding-top: 6em;
+}
 .product-content
 {
 padding:90px 0;
@@ -902,6 +906,8 @@ width:300px;
 height:300px;
 
 }
+
+
 .product-desc
 {
 margin-top:10%;    
@@ -1135,4 +1141,38 @@ color:black !important;
 {
 background:#27f788 !important;
 color:black !important;
+}
+
+.test_holder
+{
+position:relative;
+max-width:1000px;
+height:auto;
+overflow:hidden;
+margin:0 auto;
+left:0;
+right:0;
+/*border:1px solid #ccc;*/
+
+}
+.test_slider
+{
+    position: relative;
+    list-style: none;
+    min-width: 1600px;
+}
+.test_slider .testimonial
+{
+width:285px;    
+margin-top:25px;
+margin:1.3em;
+float:left;
+}
+.test_holder ul > li
+{
+display:inline-block;
+}
+.testimonial
+{
+float:left;
 }
