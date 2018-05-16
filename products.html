@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+
 <link type="text/css" rel="stylesheet" href="./css/bootstrap.css" />
 <link type="text/css" rel="stylesheet" href="css/style.css"/>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+
+  
 </head>
 <body>
 
@@ -44,9 +47,79 @@
 </nav>  
 
 <div class="container-fluid no-padding bg-grey">
+<div class="slider">
+    <div class="slide" data-src="./img/slide.jpg">
+    <div class="col-md-6 product-img">
+                <div class="col-xs-offset-5 product-content">
+                <img src="img/product-1.png"/>
+                </div>
+            </div>
+    
+            
+            <div class="col-md-6">
+            <div class="product-desc">
+                <div class="product-content">
+                <p>Safe And Comfortable Ride. Ride 2x longer<br> without any fatigue. In Traffic or on a long drive.<br> Great Air Circulation, Feels like Riding on Air.</p>
+                <br>    
+                <p class=""><img src="img/product-2.png"/></p>
+                    <a target ="_blank" class="btn btn-default prodbuy_btn pull-left" href="https://www.amazon.in/Fego-Float-back-Bikes-Suspension/dp/B079VVTPHJ/ref=sr_1_1?ie=UTF8&qid=1526279051&sr=8-1&keywords=fego+float" role="button">Buy Now</a>
+                
+                </div>
+            </div>
+            </div>
+    
+    </div>
+    
+    
+    <div class="slide" data-src="./img/slide.jpg">
+    <div class="col-md-6 product-img">
+                <div class="col-xs-offset-5 product-content">
+                <img src="img/product-1.png"/>
+                </div>
+            </div>
+    
+            
+            <div class="col-md-6">
+            <div class="product-desc">
+                <div class="product-content">
+                <p>Safe And Comfortable Ride. Ride 2x longer<br> without any fatigue. In Traffic or on a long drive.<br> Great Air Circulation, Feels like Riding on Air.</p>
+                <br>    
+                <p class=""><img src="img/product-2.png"/></p>
+                    <a target ="_blank" class="btn btn-default prodbuy_btn pull-left" href="https://www.amazon.in/Fego-Float-back-Bikes-Suspension/dp/B079VVTPHJ/ref=sr_1_1?ie=UTF8&qid=1526279051&sr=8-1&keywords=fego+float" role="button">Buy Now</a>
+                
+                </div>
+            </div>
+            </div>
+    
+    </div>
+    
+    
+        <div class="slide" data-src="./img/slide.jpg">
+    <div class="col-md-6 product-img">
+                <div class="col-xs-offset-5 product-content">
+                <img src="img/product-1.png"/>
+                </div>
+            </div>
+    
+            
+            <div class="col-md-6">
+            <div class="product-desc">
+                <div class="product-content">
+                <p>Safe And Comfortable Ride. Ride 2x longer<br> without any fatigue. In Traffic or on a long drive.<br> Great Air Circulation, Feels like Riding on Air.</p>
+                <br>    
+                <p class=""><img src="img/product-2.png"/></p>
+                    <a target ="_blank" class="btn btn-default prodbuy_btn pull-left" href="https://www.amazon.in/Fego-Float-back-Bikes-Suspension/dp/B079VVTPHJ/ref=sr_1_1?ie=UTF8&qid=1526279051&sr=8-1&keywords=fego+float" role="button">Buy Now</a>
+                
+                </div>
+            </div>
+            </div>
+    
+    </div>
+  </div>
+
     <div class="container product-wrap">
     
-        <div class="row">
+        <!--<div class="row">
             <div class="col-md-6 product-img">
                 <div class="product-content">
                 <img src="img/product-1.png"/>
@@ -64,7 +137,7 @@
             </div>
             </div>
         </div>
-
+-->
         
 <div class="container benefits_holder">
         
@@ -346,6 +419,18 @@ display:inline-block;
 {
 float:left;
 }
+#imgPopup
+{
+top:25%;    
+}
+.modal
+{
+z-index:99999;    
+}
+.slide
+{
+cursor:pointer;    
+}
 </style>        
         <div class="test_holder">
         <ul class="test_slider">
@@ -444,9 +529,29 @@ SUBMIT
     
 </footer>    
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+<div class="modal fade" id="imgPopup" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <!--<div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+-->     <div class="modal-body">
+            <img src="" id="popImg" width="100%"/>
+        </div>
+        <!--<div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>-->
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+
 <script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 <script type="text/javascript" src="./js/bootstrap.min.js"></script>
 <script type="text/javascript" src="./js/main.js"></script>
 <script type="text/javascript">
@@ -530,6 +635,25 @@ right = parseInt(right) - 340;
 $('.test_slider').animate({right:right});      
 });    
 
+    
+
+    $(document).ready(function(){
+      $('.slider').bxSlider({
+          auto:true,
+          stopAutoOnClick:true,
+          autoHover:true
+      });
+        
+    $('.slide').click(function(){
+        var src=$(this).data('src');
+        $('#popImg').attr('src',src);
+        $('#popImg').on('load',function()
+        {
+            $('#imgPopup').modal('show');    
+        });
+    });    
+    });
+      
 </script>
 </body>
 </html>
