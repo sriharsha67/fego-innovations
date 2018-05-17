@@ -485,7 +485,8 @@ $('.test_slider').animate({right:right});
 
         $('body').on('hidden.bs.modal', '.modal', function () {
             $('video').trigger('pause');
-        });  
+            $('#videoId').get(0).currentTime = 0;
+        });
     });
       
 </script>
