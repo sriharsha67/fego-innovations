@@ -566,7 +566,7 @@ border-radius:0;
 color:white !important;
 background:#414242 !important;
 margin:0;
-border:1px solid #d1d1d1;
+border: none;
 border-radius:0;
 font-family: 'Maven Pro', sans-serif;
 font-size: 1.2em;
@@ -1119,12 +1119,12 @@ color:black !important;
     color:#fff;
 }
 
-.subscribe_btn:hover,
+/* .subscribe_btn:hover,
 .chat_btn:hover, 
 .sbt_btn:hover, 
 {
     color:#fff !important;
-}
+} */
 
 .prodbuy_btn{
   margin-top: 3em;
@@ -1219,4 +1219,18 @@ cursor:pointer;
   max-width: 100%;
   display: block;
   margin: 0 auto;
+}
+
+.sbt_btn:hover
+{
+background:#27f788 !important;
+color:#fff !important;
+font-weight: 500;
+}
+
+.subscribe_btn:hover
+{
+ background:#27f788 !important;
+ color:#000 !important;
+ font-weight: 500; 
 }
