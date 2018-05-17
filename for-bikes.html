@@ -79,8 +79,7 @@
                     <div class="modal fade" id="vidPopup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                       <div class="modal-dialog vidDialog" role="document">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-
-                            <video id="fegoIntro" width="100%" controls>
+                            <video width="100%" controls id="bikeIntro">
                               <source src="videos/bike.mp4" type="video/mp4"> 
                             </video>
                         </div>
@@ -486,16 +485,16 @@ $('.test_slider').animate({right:right});
             });
         });  
         
-        $('body').on('hidden.bs.modal', '.modal', function () {
+        /*$('body').on('hidden.bs.modal', '.modal', function () {
             $('video').trigger('pause');
-            $('#videoId').get(0).currentTime = 0;
-        });
+            $('#bikeIntro').get(0).currentTime = 0;
+        });*/
     });
 
-$('#vidPopup').on('hidden.bs.modal', function () {
-  document.getElementById('fegoIntro').pause();  
-    //alert();
-})
+    $('#vidPopup').on('hidden.bs.modal', function () {
+        document.getElementById('bikeIntro').pause();  
+        $('#bikeIntro').get(0).currentTime = 0;
+    })     
 </script>
 </body>
 </html>
