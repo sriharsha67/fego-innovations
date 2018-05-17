@@ -79,7 +79,7 @@
                     <div class="modal fade" id="vidPopup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                       <div class="modal-dialog vidDialog" role="document">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <video width="100%" controls>
+                            <video id="fegoIntro" width="100%" controls>
                               <source src="videos/bike.mp4" type="video/mp4"> 
                             </video>
                         </div>
@@ -485,7 +485,10 @@ $('.test_slider').animate({right:right});
         });
     });    
     });
-      
+$('#vidPopup').on('hidden.bs.modal', function () {
+  document.getElementById('fegoIntro').pause();  
+    //alert();
+})
 </script>
 </body>
 </html>
