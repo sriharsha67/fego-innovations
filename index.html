@@ -135,25 +135,26 @@
     
     
 <div class="row">
-<div class="fg_mid_block">
-        <div class="play">            
-            <img alt="float-img" src="img/play.png" data-toggle="modal" data-target="#vidPopup"/>
-            <!-- <video width="150%" controls>
-               <source src="videos/Fego_Intro.mp4" type="video/mp4">
-             </video> -->
-            
-             <div class="modal fade" id="vidPopup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-              <div class="modal-dialog vidDialog" role="document">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <video width="100%" controls>
-                    <source src="videos/Fego_Intro.mp4" type="video/mp4"> 
-                  </video>
-              </div>
-          </div>
-            
-        </div>
-</div>
-<div class="clearfix"></div>
+    <div class="col-md-offset-3 col-md-6 col-md-offset-3 fg_mid_block">        
+        <!-- <div class="fg_mid_block" id="fegoIntro"> -->
+                <div class="introVidImg">
+                    <img src="img/video.jpg" alt="Intro Image" class="img-responsive">
+                </div>
+                <div class="play">         
+                    <img alt="float-img" src="img/play.png"/>                     
+                </div>
+                <div class="introVid">
+                    
+                    <video width="100%" height="100%" controls="controls">
+                        <source src="videos/Fego_Intro.mp4" type="video/mp4">
+                    </video>
+                    <button type="button" class="close" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+        <!-- </div> -->
+        <div class="clearfix"></div>
+    </div>
 </div>    
 <br>
 <hr>
@@ -339,7 +340,7 @@
             <div class="chat_content text-center apply-padding-tb">
             <h4>Chat with us now</h4>
             <br>
-            <button class="btn chat_btn">
+            <button class="btn btn-default chat_btn">
             Get Started
             </button>
             <div>
@@ -365,7 +366,7 @@
         <div class="form-group cnt_field">
         <textarea name="message" rows="4" placeholder="Message" class="form-control"></textarea>
         </div>
-        <button class="btn sbt_btn">
+        <button class="btn btn-default sbt_btn">
             SUBMIT
             </button>
  
@@ -401,8 +402,31 @@
     
 </footer>
 
-</body>
+
 <script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="./js/bootstrap.min.js"></script>
 <script type="text/javascript" src="./js/main.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function() {
+    
+    $('.introVid').hide();
+    $('.play').on( "click", function() {
+        $('.introVidImg').hide();
+        $('.play').hide();
+        $('.introVid').show();
+        $('.introVid > video')[0].play();
+
+        $('.introVid > .close').on( "click", function() {
+           $('.introVid > video')[0].pause();
+           $('video').get(0).currentTime = 0;
+           $('.introVid').hide();
+           $('.introVidImg').show();
+           $('.play').show();
+        });
+    });
+});
+
+</script>
+</body>
 </html>
