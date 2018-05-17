@@ -476,15 +476,22 @@ $('.test_slider').animate({right:right});
           responsive : true
       });
         
-    $('.slide').click(function(){
-        var src=$(this).data('src');
-        $('#popImg').attr('src',src);
-        $('#popImg').on('load',function()
-        {
-            $('#imgPopup').modal('show');    
+        $('.slide').click(function(){
+            var src=$(this).data('src');
+            $('#popImg').attr('src',src);
+            $('#popImg').on('load',function()
+            {
+                $('#imgPopup').modal('show');    
+            });
+        });  
+        
+        $('body').on('hidden.bs.modal', '.modal', function () {
+            $('video').trigger('pause');
         });
-    });    
     });
+
+
+
       
 </script>
 </body>
