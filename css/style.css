@@ -142,10 +142,10 @@ transition:.5s linear all;
 .navbar-default .navbar-nav > .active > a:after
 {
 position:absolute;
-bottom:0;
+bottom:5px;
 left:0;
 right:0;
-width:80%;
+width:75%;
 margin:0 auto;
 background:#27f788;
 height:4px;
