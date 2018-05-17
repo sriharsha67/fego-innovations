@@ -481,7 +481,12 @@ $('.test_slider').animate({right:right});
                 {
                     $('#imgPopup').modal('show');    
                 });
-        });    
+        });
+
+        $('body').on('hidden.bs.modal', '.modal', function () {
+            $('video').trigger('pause');
+            $('#videoId').get(0).currentTime = 0;
+        });
     });
       
 </script>
