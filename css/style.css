@@ -407,7 +407,7 @@ margin:0 10em;
 height:350px;
 border:1px solid #ccc;
 background:url(../img/video.jpg) no-repeat ;
-background-size:cover;
+background-size:cover; 
 }
 .fg_mid_block div.play
 {

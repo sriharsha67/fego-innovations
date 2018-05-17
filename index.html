@@ -125,14 +125,21 @@
     
 <div class="row">
 <div class="fg_mid_block">
-    <!-- <div class="play">
-        </div> -->
         <div class="play">            
-            <img alt="float-img" src="img/play.png" />
-            <!-- <video controls>
-              <source src="videos/bike.mp4" type="video/mp4">
-               Your browser does not support the video tag.
-            </video> -->
+            <img alt="float-img" src="img/play.png" data-toggle="modal" data-target="#vidPopup"/>
+            <!-- <video width="150%" controls>
+               <source src="videos/Fego_Intro.mp4" type="video/mp4">
+             </video> -->
+            
+             <div class="modal fade" id="vidPopup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog vidDialog" role="document">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <video width="100%" controls>
+                    <source src="videos/Fego_Intro.mp4" type="video/mp4"> 
+                  </video>
+              </div>
+          </div>
+            
         </div>
 </div>
 <div class="clearfix"></div>
