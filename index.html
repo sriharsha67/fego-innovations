@@ -135,11 +135,8 @@
     
     
 <div class="row">
-    <div class="col-md-offset-3 col-md-6 col-md-offset-3 fg_mid_block">        
+    <div class="col-md-8 fg_mid_block bg">        
         <!-- <div class="fg_mid_block" id="fegoIntro"> -->
-                <div class="introVidImg">
-                    <img src="img/video.jpg" alt="Intro Image" class="img-responsive">
-                </div>
                 <div class="play">         
                     <img alt="float-img" src="img/play.png"/>                     
                 </div>
@@ -416,15 +413,17 @@ $(document).ready(function() {
         $('.play').hide();
         $('.introVid').show();
         $('.introVid > video')[0].play();
-
-        $('.introVid > .close').on( "click", function() {
+        $('.fg_mid_block').removeClass('bg');
+    });
+    
+           $('.introVid > .close').on( "click", function() {
            $('.introVid > video')[0].pause();
            $('video').get(0).currentTime = 0;
            $('.introVid').hide();
            $('.introVidImg').show();
            $('.play').show();
+           $('.fg_mid_block').addClass('bg');
         });
-    });
 });
 
 </script>
