@@ -469,13 +469,6 @@ SUBMIT
   font-size: 160%;
 }
 
-footer p {
-  color: #738087;
-  margin-top: 100px;
-  font-size: 18px;
-  line-height: 28px;
-}
-
 @-moz-keyframes fill-stroke {
   0% {
     stroke-dasharray: 0 200;
@@ -550,7 +543,7 @@ footer p {
 </style>    
     
 <div class="wrap">
-   <button type="submit">Submit</button>
+   <button class="submit_btn" type="button">Submit</button>
 
  
    <svg width="66px" height="66px" id="box">
@@ -710,9 +703,9 @@ $('.test_slider').animate({right:right});
 
 $(document).ready(function () {
  var timer = null;
- var self = $("button");
+ var self = $(".submit_btn");
  var clicked = false;
- $("button").on("click", function () {
+ $(".submit_btn").on("click", function () {
    if (clicked === false){
      self.removeClass("filled");
      self.addClass("circle");
