@@ -10,7 +10,7 @@
 </head>
 <body style="padding:0;margin:0;">
     
-<nav class="navbar navbar-default" data-spy="affix" data-offset-top="200" id="menuBar">
+<nav class="navbar navbar-default navbar-fixed-top" id="menuBar">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -24,7 +24,7 @@
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">      
+   <div class="collapse navbar-collapse nav-margin" id="bs-example-navbar-collapse-1">      
      <ul class="nav navbar-nav navbar-right nav-list">
           <li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
           <li><a href="about.html">About Us</a></li>
@@ -142,7 +142,7 @@
                 </div>
                 <div class="introVid">
                     
-                    <video width="100%" height="100%" controls="controls">
+                    <video width="100%" height="100%" poster="https://www.w3schools.com//images/w3html5.gif">
                         <source src="videos/Fego_Intro.mp4" type="video/mp4">
                     </video>
                     <button type="button" class="close" aria-label="Close">
@@ -413,10 +413,12 @@ $(document).ready(function() {
         $('.play').hide();
         $('.introVid').show();
         $('.introVid > video')[0].play();
+		$('.introVid video').attr('controls','controls');
         $('.fg_mid_block').removeClass('bg');
     });
     
            $('.introVid > .close').on( "click", function() {
+		   $('.introVid video').removeAttr('controls');
            $('.introVid > video')[0].pause();
            $('video').get(0).currentTime = 0;
            $('.introVid').hide();
