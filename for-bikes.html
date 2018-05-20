@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-default" data-spy="affix" data-offset-top="200" id="menuBar">
+<nav class="navbar navbar-default navbar-fixed-top" id="menuBar">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -46,7 +46,7 @@
   </div><!-- /.container -->
 </nav>  
 
-<div class="container-fluid no-padding bg-grey">
+<div class="container-fluid no-padding bg-grey nav-margin">
     <div class="row">
         <div class="col-md-6 product-img">
             <div class="col-xs-offset-5 product-content" id="prod_cont">
@@ -73,7 +73,10 @@
                     <p class="prod-head">FEGO Float for Bikes</p>
                     <p>Safe And Comfortable Ride. Ride 2x longer<br> without any fatigue. In Traffic or on a long drive.<br> Great Air Circulation, Feels like Riding on Air.</p>
                     <br>    
-                    <p class="" data-toggle="modal" data-target="#vidPopup"><img src="img/product-2.png"/></p>
+                    <p style="position:relative" class="" >
+                        <span class="play_btn" data-toggle="modal" data-target="#vidPopup"></span>
+                        <img src="img/for-bikes.png"/>
+                    </p>
 
                     <!-- Video Modal -->
                     <div class="modal fade" id="vidPopup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">

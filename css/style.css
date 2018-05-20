@@ -20,6 +20,12 @@ transition:1s all linear;
 -webkit-transition:1s all linear;
 -moz-transition:1s all linear;
 -o-transition:1s all linear;
+
+}
+
+.nav-margin
+{
+margin-top:60px;    
 }
 
 .navbar-right .dropdown-menu 
@@ -32,6 +38,18 @@ transition:1s all linear;
 {
 min-width:100%;    
 }
+
+.play_btn
+{
+position:absolute;
+top:40px;
+left:0px;
+width:50px;
+height:50px;
+background:url(../img/play.png) no-repeat;
+cursor:pointer;
+}
+
 
 .affix
 {    
