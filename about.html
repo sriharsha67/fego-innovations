@@ -206,7 +206,27 @@ BECOME A PARTNER
 </div>    
 </div>
 <div class="col-md-3 no-padding">
-<button class="form-control btn btn-default subscribe_btn pull-left" onclick="subscribe()">SUBMIT</button>
+<!-- <button class="form-control btn btn-default subscribe_btn pull-left" onclick="subscribe()">SUBMIT</button> -->
+
+            <div class="wrapper">
+               <button class="form-control btn btn-default subscribe_btn pull-left partsbt_btn" type="button" onclick="subscribe()">Submit</button>
+
+               <svg width="33px" height="33px" id="circle-box">
+                 <circle class="innercircle"  stroke-width="3" fill="none" cx="16" cy="17" r="13" stroke="#27f788"></circle>
+               </svg>
+             
+                <svg class="" version="1.1" id="tick-img"  x="0px" y="0px" width="49px" height="38px">
+                    <g id="Page-1" sketch:type="MSPage">
+                    <g id="Check_1" transform="translate(115.000000, 102.000000)" sketch:type="MSLayerGroup">
+                    <path id="Rectangle-4" sketch:type="MSShapeGroup" fill="#FFFFFF" d="M-99.8-72.6l28.3-28.3c1.4-1.4,3.6-1.4,4.9,0
+                    c1.4,1.4,1.4,3.6,0,4.9l-31.2,31.1c-0.6,0.6-1.4,0.9-2.1,0.9c-0.8,0-1.5-0.3-2.1-0.9l-11.6-11.6c-1.4-1.4-1.4-3.6,0-4.9
+                    c1.4-1.4,3.6-1.4,4.9,0L-99.8-72.6z"/>
+                    </g>
+                    </g>
+                </svg>
+            </div>
+
+
 </div>    
      </div>   
     </div>    
@@ -238,11 +258,36 @@ BECOME A PARTNER
 <script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="./js/bootstrap.min.js"></script>
 <script type="text/javascript" src="./js/scrollflow.min.js"></script>
-<script>
+<script type="text/javascript">
 $(document).ready(function()
 {
 	new ScrollFlow(); 
 });
+$(document).ready(function () {
+     var timer = null;
+     var self = $(".partsbt_btn");
+     var clicked = false;
+     $(".partsbt_btn").on("click", function () {
+       if (clicked === false){
+         self.removeClass("tick-box");
+         self.addClass("animcircle");
+         self.html("");
+         clicked = true;
+         $("#circle-box").css("display", "block");
+         $(".innercircle").attr("class", "innercircle outer_circle");
+
+         timer = setInterval(
+           function tick() {
+           self.removeClass("animcircle");
+           self.addClass("tick-box");
+           // self.html("b");
+           $("#tick-img").css("display", "block");
+           $("#circle-box").css("display", "none");
+           clearInterval(timer);
+         }, 2500);
+         }
+     });
+    });
 </script>
 <script type="text/javascript" src="./js/main.js"></script>
 </body>
