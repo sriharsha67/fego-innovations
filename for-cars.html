@@ -3,6 +3,7 @@
 <head>
 
 <link type="text/css" rel="stylesheet" href="./css/bootstrap.css" />
+<link type="text/css" href="./css/simplelightbox.min.css" rel="stylesheet">
 <link type="text/css" rel="stylesheet" href="css/style.css"/>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900" rel="stylesheet">
@@ -48,48 +49,34 @@
 
 <div class="container-fluid no-padding bg-grey nav-margin">
     <div class="row">
+
         <div class="col-md-6 product-img">
             <div class="col-xs-offset-5 product-content" id="prod_cont">
-                <div class="slider">
-                    <div class="slide" data-src="./img/slide.jpg">
-                        <img src="img/Car/car03.jpg" class="thumbnail"/>
+                <div class="slider gallery">
+                    <div class="slide" data-src="./img/slide.jpg" data-toggle="modal" data-target="#imgPopup">
+                        <a href="img/Car/car03.jpg" class="big">
+                          <img src="img/Car/car03.jpg"/>
+                        </a>
                     </div>
-                    <div class="slide" data-src="./img/slide.jpg">
-                        <img src="img/Car/car04.jpg" class="thumbnail"/>
+                    <div class="slide" data-src="./img/slide.jpg" data-toggle="modal" data-target="#imgPopup">
+                        <a href="img/Car/car04.jpg" class="big">
+                          <img src="img/Car/Car04.jpg"/>
+                        </a>
                     </div>
-                    <div class="slide" data-src="./img/slide.jpg">
-                        <img src="img/Car/car01.jpg" class="thumbnail"/>
+                    <div class="slide" data-src="./img/slide.jpg" data-toggle="modal" data-target="#imgPopup">
+                        <a href="img/Car/car01.jpg" class="big">
+                          <img src="img/Car/car01.jpg"/>
+                        </a>
                     </div>
-                    <div class="slide" data-src="./img/slide.jpg">
-                        <img src="img/Car/car02.jpg" class="thumbnail"/>
+                    <div class="slide" data-src="./img/slide.jpg" data-toggle="modal" data-target="#imgPopup">
+                        <a href="img/Car/car02.jpg" class="big">
+                          <img src="img/Car/car02.jpg"/>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="modal fade" id="imgPopup" role="dialog">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                    <div class="modal-body">
-                        <!-- <img src="" id="popImg" width="100%"/> -->
-                        <div class="slider">
-                            <div class="slide" data-src="./img/slide.jpg">
-                                <img src="img/Car/car03.jpg"/>
-                            </div>
-                            <div class="slide" data-src="./img/slide.jpg">
-                                <img src="img/Car/car04.jpg"/>
-                            </div>
-                            <div class="slide" data-src="./img/slide.jpg">
-                                <img src="img/Car/car01.jpg"/>
-                            </div>
-                            <div class="slide" data-src="./img/slide.jpg">
-                                <img src="img/Car/car02.jpg"/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="col-md-6">
             <div class="product-desc">
                 <div class="product-content">
@@ -353,10 +340,10 @@ SUBMIT
 </button> -->
 
 <div class="wrap">
-   <button class="btn sbt_btn submit_btn" type="button">Submit</button>
+   <button class="submit_btn" type="button">Submit</button>
 
-   <svg width="33px" height="33px" id="box">
-     <circle class="circle_2"  stroke-width="3" fill="none" cx="16" cy="17" r="14" stroke="#1ECD97"></circle>
+   <svg width="35px" height="35px" id="box">
+     <circle class="circle_2"  stroke-width="3" fill="none" cx="16" cy="17" r="15" stroke="#1ECD97"></circle>
    </svg>
  
  <svg class="" version="1.1" id="gimg"  x="0px" y="0px" width="49px" height="38px">
@@ -400,6 +387,7 @@ c1.4-1.4,3.6-1.4,4.9,0L-99.8-72.6z"/>
 <script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./js/simple-lightbox.min.js"></script>
 <script type="text/javascript" src="./js/main.js"></script>
 <script type="text/javascript">
 
@@ -536,6 +524,76 @@ $('.test_slider').animate({right:right});
          }
      });
     });
+
+var gallery = $('.gallery a').simpleLightbox({
+
+// default source attribute
+sourceAttr: 'href',
+
+// shows fullscreen overlay
+overlay:    true,
+
+// shows loading spinner
+spinner:    true,
+
+// shows navigation arrows
+nav:      true,
+
+// // text for navigation arrows
+// navText:    ['&larr;','&rarr;'],
+
+// shows image captions
+captions:   false,
+
+// shows close button
+close:      true,
+
+// text for close button
+closeText:    'X',
+
+// show counter
+showCounter:  true,
+
+// file extensions
+fileExt:    'png|jpg|jpeg|gif',
+
+animationSlide:   true,
+
+// animation speed in ms
+animationSpeed: 250,
+
+// image preloading
+preloading:   true,
+
+// keyboard navigation
+enableKeyboard: true,
+
+// endless looping
+loop:     true,
+
+// closes the lightbox when clicking outside
+docClose:     true,
+
+// how much pixel you have to swipe
+swipeTolerance: 50,
+
+// lightbox wrapper Class
+className:    'simple-lightbox',
+
+// width / height ratios
+widthRatio:   0.8,
+heightRatio:  0.9,
+
+// disable right click
+disableRightClick:  false,
+
+
+alertError:     true,
+alertErrorMessage:  'Image not found, next image will be loaded',
+additionalHtml:   false
+
+});
+
       
 </script>
 </body>
